@@ -1,2 +1,3 @@
-#requirements.txt
-snowflake-connector-python 
+ 
+import snowflake as sf
+from snowflake import connector

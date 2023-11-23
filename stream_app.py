@@ -50,5 +50,5 @@ streamlit.dataframe(my_data_row)
 
 # adding fruits 
 fruits_selected = streamlit.multiselect("which fruit would you like to add?", list(my_fruit_list.index))
-
-streamlit.write('The user entered ',list(my_fruit_list.index))
+add_my_fruit =  st.selectbox('Email', 'Home phone', 'Mobile phone')
+streamlit.write('The user entered ',add_my_fruit)

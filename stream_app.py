@@ -49,6 +49,6 @@ streamlit.dataframe(my_data_row)
 
 
 # adding fruits 
-fruits_selected = streamlit.multiselect("which fruit would you like to add?",'apple')
 
-streamlit.write('Thanks for adding :','apple')
+add_my_fruit = streamlit.text_input('What fruit would you like information about?')
+streamlit.write('Thanks for adding :',add_my_fruit)

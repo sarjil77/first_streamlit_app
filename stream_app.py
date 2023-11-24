@@ -80,6 +80,6 @@ streamlit.write('Thanks for adding', add_my_fruit)
 
 def insert_row_snowflake(new_fruit):
     with my_cnx.cursor() as my_cur:
-        query = "INSERT INTO fruit_load_list VALUES (?)"
+        query = "INSERT INTO fruit_load_list VALUES (?) "
         my_cur.execute(query, (new_fruit,))
     return "Thanks for adding " + new_fruit
